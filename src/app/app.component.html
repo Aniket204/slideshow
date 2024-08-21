@@ -1,0 +1,7 @@
+<div class="content" role="main">
+  <button (click)=leftClick() [disabled]="disablePrev">Previous</button>
+  <div class="slideShow">
+    <div *ngFor="let dummy of ' '.repeat(10).split('')" class="slide" [style.transform]="'translateX(' + currentTranslate + 'px)'"></div>
+  </div>
+  <button (click)=rightClick() [disabled]="disableNext">Next</button>
+</div>
